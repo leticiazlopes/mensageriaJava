@@ -16,6 +16,11 @@ public class Usuario {
 		this.listaMsgUsuario.add(m);
     }
 
+	@Override
+    public String toString() {
+        return autor; // ou algo mais descritivo se preferir
+    }
+
 	public String getInfo() {
 		return "Autor: " + this.autor + "\nTelefone: " + this.telefone + "\nMensagens enviadas pelo usuário: " + this.listaMsgUsuario;
 	}

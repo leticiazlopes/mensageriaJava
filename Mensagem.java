@@ -9,13 +9,14 @@ public abstract class Mensagem {
 	
 	public Mensagem (String texto, Usuario autor) {
 		this.datahora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
-		this.autor = autor;
 		this.texto = texto;
+		this.autor = autor;
 	}
 
 	public Usuario getAutor() {
-        return autor;
+        return this.autor;
     }
+
 
 	public String getTexto() {
 		return texto;
@@ -23,15 +24,14 @@ public abstract class Mensagem {
 
 	public String getDataHora() {
     	return datahora;
-}
+	}
+
+	public void setTexto(String texto) {
+		this.texto = texto;
+	}
 
 	public String infotoString() {
-    return  getDataHora() + ' ' + texto;
-}
-
-
-
-
-	
+    	return getDataHora() + " " + autor + ": " + texto;
+	}
 	
 }
