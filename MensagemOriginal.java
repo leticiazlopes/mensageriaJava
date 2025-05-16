@@ -17,7 +17,7 @@ public class MensagemOriginal extends Mensagem {
 
     @Override
     public String toString() {
-        return "MensagemOriginal: " + texto;
+        return "MensagemOriginal: " + infotoString();
     }
 
     

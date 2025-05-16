@@ -3,12 +3,12 @@ import java.time.format.DateTimeFormatter;
 
 
 public abstract class Mensagem {
-	protected String datetime;
+	protected String datahora;
 	public String texto;
 	public Usuario autor;
 	
 	public Mensagem (String texto, Usuario autor) {
-		this.datetime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
+		this.datahora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
 		this.autor = autor;
 		this.texto = texto;
 	}
@@ -21,13 +21,12 @@ public abstract class Mensagem {
 		return texto;
 	}
 
-	public String getDatetime() {
-    	return datetime;
+	public String getDataHora() {
+    	return datahora;
 }
 
-@Override
-	public String toString() {
-    return "MensagemOriginal [data=" + getDatetime() + "] : " + texto;
+	public String infotoString() {
+    return "MensagemOriginal [data=" + getDataHora() + "] : " + texto;
 }
 
 

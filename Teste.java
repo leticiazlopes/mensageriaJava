@@ -1,6 +1,3 @@
-
-import javax.swing.event.ListDataEvent;
-
 public class Teste {
     public static void main(String[] args) {
         Usuario rafael = new Usuario("Rafinha123", "1234");
