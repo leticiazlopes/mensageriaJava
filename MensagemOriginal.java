@@ -7,7 +7,6 @@ public class MensagemOriginal extends Mensagem {
 	public MensagemOriginal (Usuario autor, String texto) {
         super(texto, autor);
         autor.adicionarMensagem(this);
-		this.listaMsgResposta = new ArrayList<>();
         //listaMsgResposta.add(new MensagemResposta(autor, texto));
     }
 
@@ -17,7 +16,7 @@ public class MensagemOriginal extends Mensagem {
 
     @Override
     public String toString() {
-        return "MensagemOriginal: " + infotoString();
+        return infotoString();
     }
 
     

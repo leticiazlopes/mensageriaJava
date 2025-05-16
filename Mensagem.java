@@ -3,7 +3,7 @@ import java.time.format.DateTimeFormatter;
 
 
 public abstract class Mensagem {
-	protected String datahora;
+	public String datahora;
 	public String texto;
 	public Usuario autor;
 	
@@ -26,7 +26,7 @@ public abstract class Mensagem {
 }
 
 	public String infotoString() {
-    return "MensagemOriginal [data=" + getDataHora() + "] : " + texto;
+    return  getDataHora() + ' ' + texto;
 }
 
 

@@ -13,7 +13,7 @@ public class Usuario {
 	}
 
 	public void adicionarMensagem(Mensagem m) {
-        listaMsgUsuario.add(m);
+		this.listaMsgUsuario.add(m);
     }
 
 	public String getInfo() {

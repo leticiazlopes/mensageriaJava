@@ -3,16 +3,12 @@ import java.util.List;
 
 public class MensagemResposta extends Mensagem { 
 	public List<MensagemOriginal> listaMsgOriginal = new ArrayList<>();
-	public MensagemResposta (Usuario autor, String texto) {
+	public MensagemResposta (Usuario autor, String texto, MensagemOriginal listamsgOriginal) {
         super(texto, autor);
         autor.adicionarMensagem(this);
-		this.listaMsgOriginal = new ArrayList<>();
-		//listaMsgOriginal.add(new MensagemOriginal(autor, texto));
+		listaMsgOriginal.add(listamsgOriginal);
     }
 
-    public void addMensagemResposta(MensagemOriginal msg) {
-        this.listaMsgOriginal.add(msg);
-    }
 
 
 	@Override
@@ -27,7 +23,7 @@ public class MensagemResposta extends Mensagem {
 
 	@Override
     public String toString() {
-        return "MensagemResposta: " + texto;
+        return infotoString();
     }
 
 }
