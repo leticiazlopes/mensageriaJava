@@ -3,23 +3,30 @@ public class Teste {
         Usuario rafael = new Usuario("Rafinha123", "1234");
         Usuario lele = new Usuario("lelezinha", "1234");
 
+        //Exemplo de fórum
         MensagemOriginal msg1 = new MensagemOriginal(rafael, "Oi, tudo bem?");
         MensagemResposta msg2 = new MensagemResposta(lele, "Oi, tudo bem. E você?", msg1);
-        MensagemResposta msg3 = new MensagemResposta(rafael, "Estou bem!", msg2);
 
-        //System.out.println(rafael.getInfo());
-        System.out.println(lele.getInfo());
+        
+        MensagemOriginal msg3 = new MensagemOriginal(rafael, "Estou bem!");
 
-        // System.out.println(msg1);
-        //System.out.println(msg2.listaMsgOriginal.toString());
+        System.out.print("Infos do Autor:");
+        //System.out.println(lele);
+        //System.out.print(" ");
 
-        //PROBLEMA: AQUI!!!!!!!!!!!!!!!!!!!!!!!
-        //System.out.println(msg3.listaMsgOriginal);
-        //System.out.println(msg2.listaMsgOriginal);
 
-        msg2.setTexto("N to bem");
-        System.out.println(msg3.listaMsgOriginal);
-        System.out.println(lele.getInfo());
+        //System.out.print("Mensagem Original");
+        //msg2.setTexto("N to bem");
+
+        System.out.println(msg1);
+        System.out.println(msg2);
+
+        //System.out.print(" ");
+
+        //System.out.println(msg2.listaMsgResposta);
+
+        System.out.print("Infos do Autor atualizadas:");
+        System.out.println(lele);
 
 
 

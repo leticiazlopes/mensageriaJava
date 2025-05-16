@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
-	public String autor;
+	public String apelido;
 	public String telefone;
 	public List<Mensagem> listaMsgUsuario = new ArrayList<>();
 	
-	public Usuario (String autor, String telefone) {
-		this.autor = autor;
+	public Usuario (String apelido, String telefone) {
+		this.apelido = apelido;
 		this.telefone = telefone;
 		this.listaMsgUsuario = new ArrayList<>();
 	}
@@ -16,13 +16,13 @@ public class Usuario {
 		this.listaMsgUsuario.add(m);
     }
 
-	@Override
+	
     public String toString() {
-        return autor; // ou algo mais descritivo se preferir
+        return apelido; // ou algo mais descritivo se preferir
     }
 
 	public String getInfo() {
-		return "Autor: " + this.autor + "\nTelefone: " + this.telefone + "\nMensagens enviadas pelo usuário: " + this.listaMsgUsuario;
+		return "Apelido: " + this.apelido;
 	}
 	
 

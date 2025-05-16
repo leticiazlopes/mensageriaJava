@@ -1,16 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class MensagemResposta extends Mensagem { 
-	public List<Mensagem> listaMsgOriginal = new ArrayList<>();
+	public MensagemOriginal MsgOriginal;
 	
-	public MensagemResposta (Usuario autor, String texto, Mensagem listamsgOriginal) {
+	public MensagemResposta (Usuario autor, String texto, MensagemOriginal original) {
         super(texto, autor);
-        autor.adicionarMensagem(this);
-		listaMsgOriginal.add(listamsgOriginal);
+		this.MsgOriginal = original;
+		original.adicionarResposta(this);
     }
-
-
 
 	@Override
 	public String getTexto() {
@@ -23,8 +18,11 @@ public class MensagemResposta extends Mensagem {
 	}
 
 	@Override
-    public String toString() {
-        return infotoString();
-    }
+	public String toString() {
+		return "[datahora=" + datahora + ", texto=" + texto + ", autor=" + autor + ", MsgOriginal="
+				+ MsgOriginal.datahora + "]";
+	}
+
+	
 
 }

@@ -11,6 +11,7 @@ public abstract class Mensagem {
 		this.datahora = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
 		this.texto = texto;
 		this.autor = autor;
+		autor.adicionarMensagem(this);
 	}
 
 	public Usuario getAutor() {

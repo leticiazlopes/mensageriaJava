@@ -10,14 +10,18 @@ public class MensagemOriginal extends Mensagem {
         //listaMsgResposta.add(new MensagemResposta(autor, texto));
     }
 
-    // public void adicionarResposta(MensagemResposta msg) {
-    //     listaMsgResposta.add(msg);
-    // }
+    public void adicionarResposta(MensagemResposta msg) {
+         listaMsgResposta.add(msg);
+     }
+
 
     @Override
-    public String toString() {
-        return infotoString();
-    }
+	public String toString() {
+		return "MensagemOriginal [datahora=" + datahora + ", texto=" + texto + ", autor=" + autor
+				+ ",\n listaMsgResposta=" + listaMsgResposta + "]";
+	}
+    
+    
 
     
 
