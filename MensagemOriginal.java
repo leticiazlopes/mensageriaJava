@@ -10,16 +10,10 @@ public class MensagemOriginal extends Mensagem {
         //listaMsgResposta.add(new MensagemResposta(autor, texto));
     }
 
-<<<<<<< HEAD
     public void adicionarResposta(MensagemResposta msg) {
          listaMsgResposta.add(msg);
      }
 
-=======
-     public void adicionarResposta(MensagemResposta resposta) {
-         listaMsgResposta.add(resposta);
-    }
->>>>>>> fc6bcb0 (feat:subindo arquivo Util)
 
     @Override
 	public String toString() {

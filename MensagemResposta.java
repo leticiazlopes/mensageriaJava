@@ -1,13 +1,7 @@
 public class MensagemResposta extends Mensagem { 
-<<<<<<< HEAD
 	public MensagemOriginal MsgOriginal;
 	
 	public MensagemResposta (Usuario autor, String texto, MensagemOriginal original) {
-=======
-	public List<MensagemOriginal> listaMsgOriginal = new ArrayList<>();
-	
-	public MensagemResposta (Usuario autor, String texto) {
->>>>>>> fc6bcb0 (feat:subindo arquivo Util)
         super(texto, autor);
 		this.MsgOriginal = original;
 		original.adicionarResposta(this);
