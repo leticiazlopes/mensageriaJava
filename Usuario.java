@@ -1,28 +1,24 @@
+//package modelo;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
-	public String apelido;
+	public String autor;
 	public String telefone;
 	public List<Mensagem> listaMsgUsuario = new ArrayList<>();
 	
-	public Usuario (String apelido, String telefone) {
-		this.apelido = apelido;
+	public Usuario (String autor, String telefone) {
+		this.autor = autor;
 		this.telefone = telefone;
 		this.listaMsgUsuario = new ArrayList<>();
 	}
 
 	public void adicionarMensagem(Mensagem m) {
-		this.listaMsgUsuario.add(m);
-    }
-
-	
-    public String toString() {
-        return apelido; // ou algo mais descritivo se preferir
+        listaMsgUsuario.add(m);
     }
 
 	public String getInfo() {
-		return "Apelido: " + this.apelido;
+		return "Autor: " + this.autor + "\nTelefone: " + this.telefone + "\nMensagens enviadas pelo usuário: " + this.listaMsgUsuario;
 	}
 	
 

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-
-
->>>>>>> fc6bcb0 (feat:subindo arquivo Util)
 public class Teste {
     public static void main(String[] args) {
         Usuario rafael = new Usuario("Rafinha123", "1234");
@@ -10,7 +5,7 @@ public class Teste {
 
         //Exemplo de fórum
         MensagemOriginal msg1 = new MensagemOriginal(rafael, "Oi, tudo bem?");
-        MensagemResposta msg2 = new MensagemResposta(lele, "Oi, tudo bem. E você?", msg1);
+        //MensagemResposta msg2 = new MensagemResposta(lele, "Oi, tudo bem. E você?", msg1);
 
         
         MensagemOriginal msg3 = new MensagemOriginal(rafael, "Estou bem!");
@@ -24,7 +19,7 @@ public class Teste {
         //msg2.setTexto("N to bem");
 
         System.out.println(msg1);
-        System.out.println(msg2);
+        System.out.println(msg3);
 
         //System.out.print(" ");
 
@@ -33,20 +28,7 @@ public class Teste {
         System.out.print("Infos do Autor atualizadas:");
         System.out.println(lele);
 
-<<<<<<< HEAD
 
-=======
-        msg1.editarTexto(("Bom dia"));
-
-        System.out.println(rafael.getInfo());
-        System.out.println(lele.getInfo());
-
-        
-
-        // System.out.println(msg1);
-        System.out.println(msg1.listaMsgResposta);
-        //System.out.println(msg2.listaMsgOriginal);
->>>>>>> fc6bcb0 (feat:subindo arquivo Util)
 
 
 
