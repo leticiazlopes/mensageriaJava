@@ -23,6 +23,7 @@ public abstract class Mensagem {
 		return texto;
 	}
 
+<<<<<<< HEAD
 	public String getDataHora() {
     	return datahora;
 	}
@@ -34,5 +35,22 @@ public abstract class Mensagem {
 	public String infotoString() {
     	return getDataHora() + " " + autor + ": " + texto;
 	}
+=======
+	public String getDatetime() {
+    	return datetime;
+	}
+
+	public void editarTexto(String novoTexto ) {
+		this.texto=novoTexto;
+	}
+
+
+
+@Override
+	public String toString() {
+    return "MensagemOriginal [data=" + getDatetime() + "] : " + texto;
+}
+	
+>>>>>>> fc6bcb0 (feat:subindo arquivo Util)
 	
 }

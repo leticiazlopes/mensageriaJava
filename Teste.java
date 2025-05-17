@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> fc6bcb0 (feat:subindo arquivo Util)
 public class Teste {
     public static void main(String[] args) {
         Usuario rafael = new Usuario("Rafinha123", "1234");
@@ -28,7 +33,20 @@ public class Teste {
         System.out.print("Infos do Autor atualizadas:");
         System.out.println(lele);
 
+<<<<<<< HEAD
 
+=======
+        msg1.editarTexto(("Bom dia"));
+
+        System.out.println(rafael.getInfo());
+        System.out.println(lele.getInfo());
+
+        
+
+        // System.out.println(msg1);
+        System.out.println(msg1.listaMsgResposta);
+        //System.out.println(msg2.listaMsgOriginal);
+>>>>>>> fc6bcb0 (feat:subindo arquivo Util)
 
 
 
